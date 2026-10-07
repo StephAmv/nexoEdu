@@ -1,27 +1,79 @@
-# Documentación base del sistema escolar
+# nexoEdu
 
-Este directorio contiene la documentación inicial para comenzar el desarrollo del sistema escolar. La información está dividida por tema para que sea más fácil consultarla, mantenerla y convertirla después en historias de usuario, diseño de base de datos o tareas técnicas.
+Plataforma web de gestión escolar para una preparatoria (caso simulado). Centraliza la información de alumnos, padres o tutores, docentes, asistencia y conducta, con acceso por roles y bitácora de acciones sensibles.
 
-## Documentos disponibles
+Proyecto integrador de la materia **Gestión de Proyectos de Software**, Instituto Tecnológico de Tijuana (TecNM).
+Docente: Mtra. María Guadalupe Rodríguez López · Periodo: 23 de septiembre al 25 de noviembre de 2026.
 
-| Documento | Propósito |
+---
+
+## Integrantes
+
+| Integrante | Rol |
 | --- | --- |
-| [`00-resumen-ejecutivo.md`](00-resumen-ejecutivo.md) | Explica de forma breve el objetivo, alcance, módulos y fases del proyecto. |
-| [`01-requisitos-funcionales.md`](01-requisitos-funcionales.md) | Detalla los módulos funcionales del sistema y lo que debe hacer cada uno. |
-| [`02-roles-y-permisos.md`](02-roles-y-permisos.md) | Define los roles del sistema y una matriz inicial de permisos RBAC. |
-| [`03-entidades-y-reglas.md`](03-entidades-y-reglas.md) | Lista las entidades principales sugeridas y reglas generales que impactan el diseño de datos. |
-| [`04-roadmap.md`](04-roadmap.md) | Propone una ruta de desarrollo por fases para construir el sistema de forma incremental. |
-| [`05-decisiones-pendientes.md`](05-decisiones-pendientes.md) | Agrupa decisiones que conviene resolver antes o durante el diseño técnico. |
+| Stephanie Ariana Medrano Vargas | Líder del proyecto, desarrollo, diseño de interfaz |
+| Dylan Alexis Padilla | Análisis y documentación, base de datos |
+| Ricardo Alejandro Pineda Gómez | Pruebas y calidad, desarrollo |
 
-## Cómo usar esta documentación
+---
 
-1. Comenzar con el resumen ejecutivo para entender la visión general.
-2. Revisar requisitos funcionales para identificar los módulos del sistema.
-3. Validar roles y permisos antes de diseñar la base de datos o pantallas.
-4. Usar entidades y reglas como punto de partida para el modelo de datos.
-5. Convertir el roadmap en épicas, historias de usuario o tareas de desarrollo.
-6. Resolver las decisiones pendientes antes de cerrar el alcance de la primera versión.
+## Alcance de la primera versión
 
-## Enfoque recomendado
+La primera versión corresponde a la **Fase 1 — Base operativa** del roadmap:
 
-La primera versión debe priorizar la base operativa: autenticación, roles, alumnos, tutores, docentes, grupos, asistencia, reportes de conducta, evidencias y visualización para padres/tutores. Esto permite entregar valor rápido y deja preparada la estructura para módulos académicos, administrativos y de reportes avanzados.
+- Inicio de sesión único con control de acceso por roles (RBAC).
+- Gestión de usuarios y roles (un usuario puede tener varios roles).
+- Ciclo escolar, grados y grupos.
+- Registro de alumnos, padres/tutores y docentes.
+- Registro y consulta de asistencias, faltas y retardos (prefectura).
+- Reportes de conducta con evidencias (docentes y prefectura).
+- Consulta de asistencia y conducta para padres/tutores.
+- Bitácora de acciones sensibles.
+
+---
+
+## Tecnologías
+
+| Categoría | Tecnología |
+| --- | --- |
+| Lenguajes | JavaScript y Python (reparto entre frontend y backend por definir) |
+| Framework | Por definir |
+| Frontend | Plantillas del framework (HTML, CSS y JavaScript) |
+| Base de datos | Firebase (Cloud Firestore) |
+| Almacenamiento de evidencias | Por definir |
+| Control de versiones | Git y GitHub |
+| Gestión del proyecto | GitHub Projects |
+| Diagramas y prototipos | draw.io |
+
+Plataforma: aplicación web responsiva (computadora, tablet y celular).
+
+---
+
+## Requisitos previos
+
+Por definir cuando se elija el framework. Se espera incluir:
+
+- Versión de Node.js y/o Python requerida.
+- Proyecto de Firebase configurado.
+- Navegador web actualizado.
+
+## Instalación
+
+Por definir.
+
+
+## Ejecución
+
+Por definir.
+
+## Credenciales de prueba
+
+Todos los datos del sistema son ficticios. Las credenciales se publicarán aquí cuando el sistema esté funcionando.
+
+| Rol | Usuario | Contraseña |
+| --- | --- | --- |
+| Administrador del sistema | Por definir | Por definir |
+| Dirección | Por definir | Por definir |
+| Prefectura | Por definir | Por definir |
+| Docente | Por definir | Por definir |
+| Padre/tutor | Por definir | Por definir |
